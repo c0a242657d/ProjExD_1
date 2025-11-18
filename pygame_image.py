@@ -31,15 +31,18 @@ def main():
         clock.tick(200)
 
         key_list = pg.key.get_pressed()#問題１０
-        koukaton_rect.move_ip(-1, 0)
+        kx = -1
+        ky = 0
+        
         if key_list[pg.K_UP]:#問題１０
-            koukaton_rect.move_ip(0, -1)
+            ky=-1
         if key_list[pg.K_DOWN]:#問題１０
-            koukaton_rect.move_ip(0, +1)
+            ky=1
         if key_list[pg.K_LEFT]:#問題１０
-            koukaton_rect.move_ip(-1, 0)
+            kx-=1
         if key_list[pg.K_RIGHT]:#問題１０
-            koukaton_rect.move_ip(+2, 0)
+            kx+=2
+        koukaton_rect.move_ip(kx, ky)
 
 
 if __name__ == "__main__":
