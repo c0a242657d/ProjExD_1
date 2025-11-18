@@ -21,7 +21,7 @@ def main():
         screen.blit(kokaton_img,[300,200])#問題４
         pg.display.update()
         tmr += 1        
-        clock.tick(100)
+        clock.tick(200)
 
 
 if __name__ == "__main__":
