@@ -16,12 +16,12 @@ def main():
     while True:
         for event in pg.event.get():
             if event.type == pg.QUIT: return
-
-        screen.blit(bg_img, [0, 0])
+        x = tmr # 練習５
+        screen.blit(bg_img, [-x, 0]) # 練習５
         screen.blit(kokaton_img,[300,200])#問題４
         pg.display.update()
         tmr += 1        
-        clock.tick(10)
+        clock.tick(100)
 
 
 if __name__ == "__main__":
